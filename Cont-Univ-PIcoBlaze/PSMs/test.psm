@@ -1,0 +1,24 @@
+; Programa para blink de 1s
+
+CONSTANT Led_port, 01 ; 8 Leds 
+LOAD s3, 00000000'b; Estado inicial=APAGADO 
+
+alternar_led:
+	XOR s3, 11111111'b
+	OUTPUT s3, Led_port
+	CALL delay1s
+	
+delay1s:
+	LOAD s2, 01001100'b ; EN [s2s1s0] guardo
+	LOAD s1, 01001011'b ; los 5.10^6 ciclos
+	LOAD s0, 01000000'b	
+	
+contar:	
+	SUB s0, 1'd
+	SUBCY s1, 0'd
+	SUBCY s2, 0'd 
+	JUMP Z, alternar_led
+	
+	jump contar
+
+

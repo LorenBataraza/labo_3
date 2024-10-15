@@ -1,0 +1,56 @@
+                    ; Programa para blink de 1s
+                    CONSTANT Switch_port, 00    ; carga de datos
+                    CONSTANT switch_control, 02 ;
+                    CONSTANT Led_port, 01       ; 8 Leds
+                    ; ESTADO INICIAL
+                    LOAD s3, 00000000'b         ; Valor inicial = 0
+                    ; Señales Control
+                    CONSTANT syn_clr, 08
+                    CONSTANT load, 04
+                    CONSTANT enable, 02
+                    CONSTANT up, 01
+contador_universal: 
+                    INPUT s4, switch_control
+                    ; Syncl Clear
+                    TEST s4, syn_clr
+                    CALL C, CLEAR
+                    JUMP C, contador_universal  ;
+                    ; LOAD
+                    TEST s4, load
+                    CALL C, CARGA
+                    JUMP C, contador_universal  ;
+                    TEST s4, enable
+                    JUMP NC, contador_universal ; VUELVO SI en=0
+                    TEST s4, up
+                    CALL C, contador_up
+                    TEST s4, up
+                    CALL NC, contador_down
+                    OUTPUT s3, Led_port         ; ACTUALIZO LEDs
+                    CALL delay1s
+                    JUMP contador_universal
+       contador_up: 
+                    ADD s3, 1'd
+                    RETURN 
+     contador_down: 
+                    SUB s3, 1'd
+                    RETURN 
+                    ; FUNCIONES CONTROL
+             CLEAR: 
+                    LOAD s3, 00
+                    OUTPUT s3, Led_port         ; ACTUALIZO LEDs
+                    RETURN 
+             CARGA: 
+                    INPUT s5, Switch_port
+                    LOAD s3, s5
+                    OUTPUT s3, Led_port         ; ACTUALIZO LEDs
+                    RETURN 
+           delay1s: 
+                    LOAD s2, 01001100'b         ; EN [s2s1s0] guardo
+                    LOAD s1, 01001011'b         ; los 5.10^6 ciclos
+                    LOAD s0, 01000000'b
+    contador_delay: 
+                    SUB s0, 1'd
+                    SUBCY s1, 0'd
+                    SUBCY s2, 0'd
+                    RETURN Z
+                    JUMP contador_delay

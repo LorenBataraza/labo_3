@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Oct 15 15:37:30 2024
+# Process ID: 70143
+# Current directory: /home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.runs/impl_1
+# Command line: vivado -log picoblaze_example_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source picoblaze_example_top.tcl -notrace
+# Log file: /home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.runs/impl_1/picoblaze_example_top.vdi
+# Journal file: /home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.runs/impl_1/vivado.jou
+# Running On        :Lolo
+# Platform          :Debian
+# Operating System  :Debian GNU/Linux 12 (bookworm)
+# Processor Detail  :AMD Ryzen 5 5500U with Radeon Graphics
+# CPU Frequency     :1721.446 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :14508 MB
+# Swap memory       :1024 MB
+# Total Virtual     :15532 MB
+# Available Virtual :9122 MB
+#-----------------------------------------------------------
+source picoblaze_example_top.tcl -notrace

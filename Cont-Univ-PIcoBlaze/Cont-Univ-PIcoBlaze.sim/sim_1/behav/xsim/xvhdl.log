@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sim_1/imports/sim/picoblaze_example_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'picoblaze_example_tb'

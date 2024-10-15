@@ -1,0 +1,601 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Oct 15 15:35:49 2024
+# Process ID: 57179
+# Current directory: /home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.runs/synth_1
+# Command line: vivado -log picoblaze_example_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source picoblaze_example_top.tcl
+# Log file: /home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.runs/synth_1/picoblaze_example_top.vds
+# Journal file: /home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.runs/synth_1/vivado.jou
+# Running On        :Lolo
+# Platform          :Debian
+# Operating System  :Debian GNU/Linux 12 (bookworm)
+# Processor Detail  :AMD Ryzen 5 5500U with Radeon Graphics
+# CPU Frequency     :3119.580 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :14508 MB
+# Swap memory       :1024 MB
+# Total Virtual     :15532 MB
+# Available Virtual :9144 MB
+#-----------------------------------------------------------
+source picoblaze_example_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1405.133 ; gain = 0.023 ; free physical = 2288 ; free virtual = 8352
+Command: read_checkpoint -auto_incremental -incremental /home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/utils_1/imports/synth_1/picoblaze_example_tb.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/utils_1/imports/synth_1/picoblaze_example_tb.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top picoblaze_example_top__rtl -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Device 21-9227] Part: xc7s50csga324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 57241
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2113.848 ; gain = 412.715 ; free physical = 1240 ; free virtual = 7305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'picoblaze_example_top' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/picoblaze_example_top.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'kcpsm6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:111]
+	Parameter hwbuild bound to: 8'b00000000 
+	Parameter interrupt_vector bound to: 12'b001111111111 
+	Parameter scratch_pad_memory_size bound to: 64 - type: integer 
+	Parameter INIT bound to: 64'b1111111111111111111101010101010100000000000000000000111011101110 
+INFO: [Synth 8-113] binding component instance 'reset_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:685]
+INFO: [Synth 8-113] binding component instance 'run_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:696]
+INFO: [Synth 8-113] binding component instance 'internal_reset_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:701]
+INFO: [Synth 8-113] binding component instance 'sync_sleep_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:706]
+	Parameter INIT bound to: 64'b0000000010000011000000000000101100000000110001000000000001001100 
+INFO: [Synth 8-113] binding component instance 't_state_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:711]
+INFO: [Synth 8-113] binding component instance 't_state1_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:722]
+INFO: [Synth 8-113] binding component instance 't_state2_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:727]
+	Parameter INIT bound to: 64'b0000000000010000000000000000000000000000000000000000100000000000 
+INFO: [Synth 8-113] binding component instance 'int_enable_type_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:733]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000001100101010101010 
+INFO: [Synth 8-113] binding component instance 'interrupt_enable_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:744]
+INFO: [Synth 8-113] binding component instance 'interrupt_enable_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:754]
+INFO: [Synth 8-113] binding component instance 'sync_interrupt_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:759]
+	Parameter INIT bound to: 64'b1100110000110011111111110000000010000000100000001000000010000000 
+INFO: [Synth 8-113] binding component instance 'active_interrupt_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:764]
+INFO: [Synth 8-113] binding component instance 'active_interrupt_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:775]
+INFO: [Synth 8-113] binding component instance 'interrupt_ack_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:780]
+	Parameter INIT bound to: 64'b0101101000111100111111111111111100000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_move_is_valid_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:804]
+	Parameter INIT bound to: 64'b0111011101110111000000100111011100000000000000000000001000000000 
+INFO: [Synth 8-113] binding component instance 'move_type_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:814]
+	Parameter INIT bound to: 64'b0000000000000000111100000000000000000000000000000010001111111111 
+INFO: [Synth 8-113] binding component instance 'pc_mode1_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:825]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111100000000000001000000000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_mode2_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:836]
+	Parameter INIT bound to: 64'b1111111111111111000100000000000000000000000000000010000000000000 
+INFO: [Synth 8-113] binding component instance 'push_pop_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:846]
+	Parameter INIT bound to: 64'b0000001111001010000000000000000000000100001000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'alu_decode0_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:861]
+INFO: [Synth 8-113] binding component instance 'alu_mux_sel0_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:872]
+	Parameter INIT bound to: 64'b0111011100001000000000000000000000000000000000000000111100000000 
+INFO: [Synth 8-113] binding component instance 'alu_decode1_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:877]
+INFO: [Synth 8-113] binding component instance 'alu_mux_sel1_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:888]
+	Parameter INIT bound to: 64'b1101000000000000000000000000000000000010000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'alu_decode2_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:894]
+	Parameter INIT bound to: 64'b0000000000000001001111110011111100000000000100001111011111001110 
+INFO: [Synth 8-113] binding component instance 'register_enable_type_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:909]
+	Parameter INIT bound to: 64'b1100000011001100000000000000000010100000101010100000000000000000 
+INFO: [Synth 8-113] binding component instance 'register_enable_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:920]
+INFO: [Synth 8-113] binding component instance 'flag_enable_flop' to cell 'FDR' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:931]
+INFO: [Synth 8-113] binding component instance 'register_enable_flop' to cell 'FDR' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:937]
+	Parameter INIT bound to: 64'b1000000000000000000000000000000000100000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'spm_enable_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:943]
+INFO: [Synth 8-113] binding component instance 'k_write_strobe_flop' to cell 'FDR' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:954]
+INFO: [Synth 8-113] binding component instance 'spm_enable_flop' to cell 'FDR' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:960]
+	Parameter INIT bound to: 64'b0100000000000000000000000000000000000001000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'read_strobe_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:966]
+INFO: [Synth 8-113] binding component instance 'write_strobe_flop' to cell 'FDR' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:977]
+INFO: [Synth 8-113] binding component instance 'read_strobe_flop' to cell 'FDR' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:983]
+	Parameter INIT bound to: 64'b0000000010000000000000100000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'regbank_type_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1001]
+	Parameter INIT bound to: 64'b1010110010101100111111110000000011111111000000001111111100000000 
+INFO: [Synth 8-113] binding component instance 'bank_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1011]
+INFO: [Synth 8-113] binding component instance 'bank_flop' to cell 'FDR' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1021]
+INFO: [Synth 8-113] binding component instance 'sx_addr4_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1027]
+INFO: [Synth 8-113] binding component instance 'arith_carry_xorcy' to cell 'XORCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1051]
+INFO: [Synth 8-113] binding component instance 'arith_carry_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1056]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000010000111011110000000000000000000 
+INFO: [Synth 8-113] binding component instance 'lower_parity_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1061]
+INFO: [Synth 8-113] binding component instance 'parity_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1072]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'upper_parity_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1078]
+INFO: [Synth 8-113] binding component instance 'parity_xorcy' to cell 'XORCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1088]
+	Parameter INIT bound to: 64'b1111111111111111101010101100110011110000111100001111000011110000 
+INFO: [Synth 8-113] binding component instance 'shift_carry_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1093]
+INFO: [Synth 8-113] binding component instance 'shift_carry_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1103]
+	Parameter INIT bound to: 64'b0011001100110011101010101100110011110000101010100000000000000000 
+INFO: [Synth 8-113] binding component instance 'carry_flag_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1108]
+INFO: [Synth 8-113] binding component instance 'carry_flag_flop' to cell 'FDRE' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1119]
+INFO: [Synth 8-113] binding component instance 'init_zero_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1126]
+	Parameter INIT bound to: 64'b1010001010000000000000000000000000000000111100000000000011110000 
+INFO: [Synth 8-113] binding component instance 'use_zero_flag_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1132]
+INFO: [Synth 8-113] binding component instance 'use_zero_flag_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1143]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-113] binding component instance 'lower_zero_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1148]
+INFO: [Synth 8-113] binding component instance 'lower_zero_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1159]
+	Parameter INIT bound to: 64'b0000000000000000000000000000110100000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'middle_zero_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1165]
+INFO: [Synth 8-113] binding component instance 'middle_zero_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1176]
+	Parameter INIT bound to: 64'b1111101111111111000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'upper_zero_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1182]
+INFO: [Synth 8-113] binding component instance 'upper_zero_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1192]
+INFO: [Synth 8-113] binding component instance 'zero_flag_flop' to cell 'FDRE' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1198]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1264]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111100110011110011000000111100000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1350]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1366]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1371]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1249]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1440]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1264]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1440]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1249]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1440]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1264]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1440]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1249]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1440]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1264]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1440]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1249]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:1411]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0000000010101010000000000000000011001100110011001111000000000000 
+	Parameter INIT bound to: 64'b0000000010101010000000000000000011001100110011001111000000000000 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT bound to: 64'b0000000000010101001010011010101010101010101010101010101010101010 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 64'b1011111110111100100011111000110010110011101100001000001110000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'kcpsm6' (0#1) [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'test' [/home/lorenzo/Cont-Univ-PIcoBlaze/PSMs/cont_univ/test.vhd:143]
+	Parameter C_FAMILY bound to: 7S - type: string 
+	Parameter C_RAM_SIZE_KWORDS bound to: 1 - type: integer 
+	Parameter C_JTAG_LOADER_ENABLE bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOB_REG bound to: 0 - type: integer 
+	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101101010100000010100000101000100110011010101100110011001111001111000000 
+	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0000000000011100110100110000000111000000000100111101010000000001100000000001000111010100000000011110000000000001110101000000001010100000000000011000000000011000110101000000010010100000000000011000000000010101110101000000100010010100000000100001001100000000 
+	Parameter INIT_01 bound to: 256'b1001000000000001000100000100000000010001010010110001001001001100010100000000000011010011000000010000001101010000100101010000000001010000000000001101001100000001000100110000000001010000000000001001001100000001010100000000000000010011000000010010000000000001 
+	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000011111000100000000000010110010000000001011000100000000 
+	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_08 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_09 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_10 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_11 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_12 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_13 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_14 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_15 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_16 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_17 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_18 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_19 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_20 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_21 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_22 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_23 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_24 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_25 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_26 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_27 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_28 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_29 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_30 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_31 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_32 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_33 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_34 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_35 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_36 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_37 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_38 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_39 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_A bound to: 18'b000000000000000000 
+	Parameter INIT_B bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_FILE bound to: NONE - type: string 
+	Parameter RAM_MODE bound to: TDP - type: string 
+	Parameter RDADDR_COLLISION_HWCONFIG bound to: DELAYED_WRITE - type: string 
+	Parameter READ_WIDTH_A bound to: 18 - type: integer 
+	Parameter READ_WIDTH_B bound to: 18 - type: integer 
+	Parameter RSTREG_PRIORITY_A bound to: REGCE - type: string 
+	Parameter RSTREG_PRIORITY_B bound to: REGCE - type: string 
+	Parameter SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SRVAL_A bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SRVAL_B bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter WRITE_WIDTH_A bound to: 18 - type: integer 
+	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'test' (0#1) [/home/lorenzo/Cont-Univ-PIcoBlaze/PSMs/cont_univ/test.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'cod_7_seg' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/new/cod_7_seg.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'cod_7_seg' (0#1) [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/new/cod_7_seg.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'disp_mux' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/new/disp_mux.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'universal_bin_counter' [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/new/universal_bin_counter.vhd:44]
+	Parameter N bound to: 13 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'universal_bin_counter' (0#1) [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/new/universal_bin_counter.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'disp_mux' (0#1) [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/new/disp_mux.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'picoblaze_example_top' (0#1) [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/picoblaze_example_top.vhd:35]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2195.785 ; gain = 494.652 ; free physical = 1151 ; free virtual = 7217
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2213.598 ; gain = 512.465 ; free physical = 1139 ; free virtual = 7205
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2213.598 ; gain = 512.465 ; free physical = 1139 ; free virtual = 7205
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2219.535 ; gain = 0.000 ; free physical = 1126 ; free virtual = 7192
+INFO: [Netlist 29-17] Analyzing 181 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/constrs_1/imports/constraints/alu_fsm.xdc]
+Finished Parsing XDC File [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/constrs_1/imports/constraints/alu_fsm.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/constrs_1/imports/constraints/alu_fsm.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/picoblaze_example_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/picoblaze_example_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2348.348 ; gain = 0.000 ; free physical = 1064 ; free virtual = 7130
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 124 instances were transformed.
+  FD => FDRE: 48 instances
+  FDR => FDRE: 20 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2348.348 ; gain = 0.000 ; free physical = 1064 ; free virtual = 7130
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2348.348 ; gain = 647.215 ; free physical = 1066 ; free virtual = 7132
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1066 ; free virtual = 7132
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1066 ; free virtual = 7132
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint /home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/utils_1/imports/synth_1/picoblaze_example_tb.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1064 ; free virtual = 7131
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1064 ; free virtual = 7131
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1064 ; free virtual = 7131
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   13 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   13 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design picoblaze_example_top has port sseg_0[7] driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (processor/sync_sleep_flop) is unused and will be removed from module picoblaze_example_top.
+WARNING: [Synth 8-3332] Sequential element (processor/sync_interrupt_flop) is unused and will be removed from module picoblaze_example_top.
+WARNING: [Synth 8-3332] Sequential element (processor/interrupt_ack_flop) is unused and will be removed from module picoblaze_example_top.
+WARNING: [Synth 8-3332] Sequential element (processor/k_write_strobe_flop) is unused and will be removed from module picoblaze_example_top.
+WARNING: [Synth 8-3332] Sequential element (processor/read_strobe_flop) is unused and will be removed from module picoblaze_example_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1059 ; free virtual = 7131
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1056 ; free virtual = 7128
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1056 ; free virtual = 7128
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1055 ; free virtual = 7127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1055 ; free virtual = 7127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1055 ; free virtual = 7127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1055 ; free virtual = 7127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1055 ; free virtual = 7127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1055 ; free virtual = 7127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1055 ; free virtual = 7127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     3|
+|3     |LUT1     |     2|
+|4     |LUT2     |    16|
+|5     |LUT3     |     4|
+|6     |LUT6     |    93|
+|8     |MUXCY    |    29|
+|9     |RAM32M   |     4|
+|10    |RAM64M   |     2|
+|11    |RAMB18E1 |     1|
+|12    |XORCY    |    27|
+|13    |FD       |    45|
+|14    |FDCE     |    13|
+|15    |FDR      |    18|
+|16    |FDRE     |    30|
+|17    |IBUF     |    14|
+|18    |OBUF     |    20|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2356.352 ; gain = 655.219 ; free physical = 1055 ; free virtual = 7127
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2356.352 ; gain = 520.469 ; free physical = 1054 ; free virtual = 7127
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2356.359 ; gain = 655.219 ; free physical = 1054 ; free virtual = 7127
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2356.359 ; gain = 0.000 ; free physical = 1054 ; free virtual = 7127
+INFO: [Netlist 29-17] Analyzing 179 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2412.379 ; gain = 0.000 ; free physical = 1359 ; free virtual = 7431
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 129 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 10 instances
+  FD => FDRE: 45 instances
+  FDR => FDRE: 18 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 2 instances
+
+Synth Design complete | Checksum: 99e3e1d
+INFO: [Common 17-83] Releasing license: Synthesis
+134 Infos, 7 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 2412.379 ; gain = 1007.246 ; free physical = 1359 ; free virtual = 7431
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1961.920; main = 1614.498; forked = 399.233
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3381.129; main = 2412.379; forked = 1024.777
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2436.391 ; gain = 0.000 ; free physical = 1359 ; free virtual = 7431
+INFO: [Common 17-1381] The checkpoint '/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.runs/synth_1/picoblaze_example_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file picoblaze_example_top_utilization_synth.rpt -pb picoblaze_example_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 15 15:36:25 2024...

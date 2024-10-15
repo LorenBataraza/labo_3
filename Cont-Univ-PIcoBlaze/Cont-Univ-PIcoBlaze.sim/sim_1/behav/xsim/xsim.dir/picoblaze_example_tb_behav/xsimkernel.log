@@ -1,0 +1,7 @@
+Running: xsim.dir/picoblaze_example_tb_behav/xsimk -simmode gui -wdb picoblaze_example_tb_behav.wdb -simrunnum 0 -socket 49019
+Design successfully loaded
+Design Loading Memory Usage: 21372 KB (Peak: 21380 KB)
+Design Loading CPU Usage: 40 ms
+Simulation completed
+Simulation Memory Usage: 111308 KB (Peak: 160640 KB)
+Simulation CPU Usage: 50 ms

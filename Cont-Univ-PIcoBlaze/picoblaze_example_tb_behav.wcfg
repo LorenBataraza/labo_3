@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="picoblaze_example_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="jtag_loader_pkg" />
+            <top_module name="picoblaze_example_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="103.352 ns"></ZoomStartTime>
+      <ZoomEndTime time="368.711 ns"></ZoomEndTime>
+      <Cursor1Time time="811.686 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="152"></NameColumnWidth>
+      <ValueColumnWidth column_width="160"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject type="logic" fp_name="/picoblaze_example_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/picoblaze_example_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/picoblaze_example_tb/in_switch">
+      <obj_property name="ElementShortName">in_switch[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_switch[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/picoblaze_example_tb/in_control">
+      <obj_property name="ElementShortName">in_control[3:0]</obj_property>
+      <obj_property name="ObjectShortName">in_control[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/picoblaze_example_tb/out_led">
+      <obj_property name="ElementShortName">out_led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_led[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/picoblaze_example_tb/CLK_PERIOD">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/picoblaze_example_tb/uut_inst/in_port">
+      <obj_property name="ElementShortName">in_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_port[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/picoblaze_example_tb/uut_inst/processor/sim_s0">
+      <obj_property name="ElementShortName">sim_s0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_s0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/picoblaze_example_tb/uut_inst/processor/sim_s1">
+      <obj_property name="ElementShortName">sim_s1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_s1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/picoblaze_example_tb/uut_inst/processor/sim_s2">
+      <obj_property name="ElementShortName">sim_s2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_s2[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/picoblaze_example_tb/uut_inst/processor/sim_s3">
+      <obj_property name="ElementShortName">sim_s3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_s3[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/picoblaze_example_tb/uut_inst/processor/sim_s4">
+      <obj_property name="ElementShortName">sim_s4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_s4[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/picoblaze_example_tb/uut_inst/processor/instruction">
+      <obj_property name="ElementShortName">instruction[17:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[17:0]</obj_property>
+   </wvobject>
+</wave_config>

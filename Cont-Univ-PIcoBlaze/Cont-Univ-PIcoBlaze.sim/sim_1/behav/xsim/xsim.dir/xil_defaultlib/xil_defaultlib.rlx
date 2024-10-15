@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sim_1/imports/sim/picoblaze_example_tb.vhd,1728594282,vhdl,,,,picoblaze_example_tb,,,,,,,,
+/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd,1691674763,vhdl,/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/picoblaze_example_top.vhd,,,kcpsm6,,,,,,,,
+/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/picoblaze_example_top.vhd,1728588548,vhdl,/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sim_1/imports/sim/picoblaze_example_tb.vhd,,,picoblaze_example_top,,,,,,,,
+/home/lorenzo/Cont-Univ-PIcoBlaze/PSMs/cont_univ/test.vhd,1728594186,vhdl,/home/lorenzo/Cont-Univ-PIcoBlaze/Cont-Univ-PIcoBlaze.srcs/sources_1/imports/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/picoblaze_example_top.vhd,,,jtag_loader_pkg;test,,,,,,,,
