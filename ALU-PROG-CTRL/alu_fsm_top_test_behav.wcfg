@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="alu_fsm_top_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="alu_fsm_top_test" />
+            <top_module name="alu_pkg" />
+            <top_module name="rom_pkg" />
+            <top_module name="sdp_ram_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,138.038 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,602.086 ns"></ZoomEndTime>
+      <Cursor1Time time="2,427.279 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="153"></NameColumnWidth>
+      <ValueColumnWidth column_width="158"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject type="logic" fp_name="/alu_fsm_top_test/sys_clk_in">
+      <obj_property name="ElementShortName">sys_clk_in</obj_property>
+      <obj_property name="ObjectShortName">sys_clk_in</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_fsm_top_test/buttons_in">
+      <obj_property name="ElementShortName">buttons_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">buttons_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_fsm_top_test/switches_in">
+      <obj_property name="ElementShortName">switches_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">switches_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/alu_fsm_top_test/error_out">
+      <obj_property name="ElementShortName">error_out</obj_property>
+      <obj_property name="ObjectShortName">error_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_fsm_top_test/alu_fsm_top_inst/arbitered_ram_inst/sdp_ram_inst/mem">
+      <obj_property name="ElementShortName">mem[0:3][4:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[0:3][4:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/alu_fsm_top_test/alu_fsm_top_inst/alu_fsm_inst/state_reg">
+      <obj_property name="ElementShortName">state_reg</obj_property>
+      <obj_property name="ObjectShortName">state_reg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/alu_fsm_top_test/alu_fsm_top_inst/program_control_inst/program_step_in">
+      <obj_property name="ElementShortName">program_step_in</obj_property>
+      <obj_property name="ObjectShortName">program_step_in</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/alu_fsm_top_test/alu_fsm_top_inst/program_control_inst/program_counter_reg">
+      <obj_property name="ElementShortName">program_counter_reg</obj_property>
+      <obj_property name="ObjectShortName">program_counter_reg</obj_property>
+   </wvobject>
+</wave_config>

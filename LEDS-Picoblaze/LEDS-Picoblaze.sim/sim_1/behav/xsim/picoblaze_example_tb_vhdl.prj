@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd" \
+"../../../../LEDS-Picoblaze.srcs/sources_1/imports/psm/test.vhd" \
+"../../../../LEDS-Picoblaze.srcs/sources_1/imports/src/picoblaze_example_top.vhd" \
+"../../../../LEDS-Picoblaze.srcs/sim_1/imports/sim/picoblaze_example_tb.vhd" \
+
+# Do not sort compile order
+nosort

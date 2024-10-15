@@ -1,0 +1,99 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Tue Sep 17 15:07:16 2024
+| Host         : Lolo running 64-bit Debian GNU/Linux 12 (bookworm)
+| Command      : report_control_sets -verbose -file alu_fsm_top_control_sets_placed.rpt
+| Design       : alu_fsm_top
+| Device       : xc7s50
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    21 |
+|    Minimum number of control sets                        |    21 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    21 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    11 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              22 |            9 |
+| No           | No                    | Yes                    |               3 |            2 |
+| No           | Yes                   | No                     |             371 |          100 |
+| Yes          | No                    | No                     |               5 |            1 |
+| Yes          | No                    | Yes                    |              10 |            4 |
+| Yes          | Yes                   | No                     |               5 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+---------------------------------+------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|             Clock Signal            |          Enable Signal          |                                           Set/Reset Signal                                           | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------+---------------------------------+------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  alu_fsm_inst/error_out_reg_i_2_n_0 |                                 |                                                                                                      |                1 |              1 |         1.00 |
+|  alu_fsm_inst/alu_rd_en             |                                 |                                                                                                      |                1 |              2 |         2.00 |
+|  sys_clk_in_IBUF_BUFG               | alu_fsm_inst/ddf_inst1/en_dff1  | input_conditioning_inst/impl_gen.reset_synchronizer_inst/level_synchronizer_data_reg[1]              |                2 |              5 |         2.50 |
+|  sys_clk_in_IBUF_BUFG               | alu_fsm_inst/peek_en_out_reg[0] |                                                                                                      |                1 |              5 |         5.00 |
+|  sys_clk_in_IBUF_BUFG               | alu_fsm_inst/E[0]               | input_conditioning_inst/impl_gen.reset_synchronizer_inst/level_synchronizer_data_reg[1]              |                1 |              5 |         5.00 |
+|  sys_clk_in_IBUF_BUFG               | alu_fsm_inst/ddf_inst0/en_dff0  | input_conditioning_inst/impl_gen.reset_synchronizer_inst/level_synchronizer_data_reg[1]              |                2 |              5 |         2.50 |
+|  sys_clk_in_IBUF_BUFG               |                                 | sseg_controller_inst/sseg_out[5]_i_1_n_0                                                             |                2 |              6 |         3.00 |
+|  alu_fsm_inst/alu_wr_en             |                                 |                                                                                                      |                3 |              7 |         2.33 |
+|  sys_clk_in_IBUF_BUFG               | alu_fsm_inst/wr_en              |                                                                                                      |                1 |              8 |         8.00 |
+|  sys_clk_in_IBUF_BUFG               |                                 |                                                                                                      |                4 |             12 |         3.00 |
+|  sys_clk_in_IBUF_BUFG               |                                 | input_conditioning_inst/impl_gen.inputs_conditioning_gen[6].debouncer_inst/counter_reg[0]_i_1__5_n_0 |                8 |             31 |         3.88 |
+|  sys_clk_in_IBUF_BUFG               |                                 | input_conditioning_inst/impl_gen.inputs_conditioning_gen[0].debouncer_inst/counter_reg[0]_i_1_n_0    |                8 |             31 |         3.88 |
+|  sys_clk_in_IBUF_BUFG               |                                 | input_conditioning_inst/impl_gen.inputs_conditioning_gen[1].debouncer_inst/counter_reg[0]_i_1__0_n_0 |                8 |             31 |         3.88 |
+|  sys_clk_in_IBUF_BUFG               |                                 | input_conditioning_inst/impl_gen.inputs_conditioning_gen[9].debouncer_inst/counter_reg[0]_i_1__8_n_0 |                8 |             31 |         3.88 |
+|  sys_clk_in_IBUF_BUFG               |                                 | input_conditioning_inst/impl_gen.inputs_conditioning_gen[7].debouncer_inst/counter_reg[0]_i_1__6_n_0 |                8 |             31 |         3.88 |
+|  sys_clk_in_IBUF_BUFG               |                                 | input_conditioning_inst/impl_gen.inputs_conditioning_gen[8].debouncer_inst/counter_reg[0]_i_1__7_n_0 |                8 |             31 |         3.88 |
+|  sys_clk_in_IBUF_BUFG               |                                 | input_conditioning_inst/impl_gen.inputs_conditioning_gen[5].debouncer_inst/counter_reg[0]_i_1__4_n_0 |                8 |             31 |         3.88 |
+|  sys_clk_in_IBUF_BUFG               |                                 | input_conditioning_inst/impl_gen.inputs_conditioning_gen[3].debouncer_inst/counter_reg[0]_i_1__2_n_0 |                8 |             31 |         3.88 |
+|  sys_clk_in_IBUF_BUFG               |                                 | input_conditioning_inst/impl_gen.inputs_conditioning_gen[2].debouncer_inst/counter_reg[0]_i_1__1_n_0 |                8 |             31 |         3.88 |
+|  sys_clk_in_IBUF_BUFG               |                                 | input_conditioning_inst/impl_gen.inputs_conditioning_gen[4].debouncer_inst/counter_reg[0]_i_1__3_n_0 |                8 |             31 |         3.88 |
+|  sys_clk_in_IBUF_BUFG               |                                 | input_conditioning_inst/impl_gen.reset_synchronizer_inst/level_synchronizer_data_reg[1]              |               20 |             58 |         2.90 |
++-------------------------------------+---------------------------------+------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,9 @@
+       ; Programa que escribe en los 8 leds la entrada de 8 switches
+       ; 8 switches
+       CONSTANT Switch_port, 00
+       ; 8 Leds
+       CONSTANT Led_port, 01
+start: 
+       INPUT s0, Switch_port
+       OUTPUT s0, Led_port
+       JUMP start

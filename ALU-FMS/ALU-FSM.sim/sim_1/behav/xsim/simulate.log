@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Simulación terminó OK
+Time: 1350 ns  Iteration: 0  Process: /alu_fsm_top_test/stim_proc  File: /home/lorenzo/Desktop/Labo_3/codigo/ALU-FMS/ALU-FSM.srcs/sim_1/new/alu_fsm_top_test.vhd
+$finish called at time : 1350 ns : File "/home/lorenzo/Desktop/Labo_3/codigo/ALU-FMS/ALU-FSM.srcs/sim_1/new/alu_fsm_top_test.vhd" Line 174

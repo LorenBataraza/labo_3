@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "multiplicador_sin_signo_behav" "xil_defaultlib.multiplicador_sin_signo" -log "elaborate.log" 

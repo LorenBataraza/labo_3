@@ -1,0 +1,20 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot alu_test_behav xil_defaultlib.alu_test -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MyS_2_C2 [mys_2_c2_default]
+Compiling architecture behavioral of entity xil_defaultlib.calculadora_elemental [calculadora_elemental_default]
+Compiling architecture behavioral of entity xil_defaultlib.MyS_2_C2 [\MyS_2_C2(n=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.alu_4bits [alu_4bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_test
+Built simulation snapshot alu_test_behav

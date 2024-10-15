@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "universal_bin_counter_test_behav" "xil_defaultlib.universal_bin_counter_test" -log "elaborate.log" 

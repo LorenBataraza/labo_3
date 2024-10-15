@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Aug 29 16:02:21 2024
+# Process ID: 65384
+# Current directory: /home/lorenzo/Desktop/Labo_3/codigo/contador_universal/contador_universal.runs/impl_1
+# Command line: vivado -log printeo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source printeo.tcl -notrace
+# Log file: /home/lorenzo/Desktop/Labo_3/codigo/contador_universal/contador_universal.runs/impl_1/printeo.vdi
+# Journal file: /home/lorenzo/Desktop/Labo_3/codigo/contador_universal/contador_universal.runs/impl_1/vivado.jou
+# Running On        :Lolo
+# Platform          :Debian
+# Operating System  :Debian GNU/Linux 12 (bookworm)
+# Processor Detail  :AMD Ryzen 5 5500U with Radeon Graphics
+# CPU Frequency     :1718.133 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :14508 MB
+# Swap memory       :1024 MB
+# Total Virtual     :15532 MB
+# Available Virtual :8683 MB
+#-----------------------------------------------------------
+source printeo.tcl -notrace

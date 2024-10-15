@@ -1,0 +1,34 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot alu_fsm_top_test_behav xil_defaultlib.alu_fsm_top_test -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.sdp_ram_pkg
+Compiling package xil_defaultlib.rom_pkg
+Compiling package xil_defaultlib.alu_pkg
+Compiling architecture rtl of entity xil_defaultlib.input_conditioning [\input_conditioning(sim_only='1'...]
+Compiling architecture rtl of entity xil_defaultlib.rom [rom_default]
+Compiling architecture rtl of entity xil_defaultlib.program_control [program_control_default]
+Compiling architecture rtl of entity xil_defaultlib.sdp_ram [sdp_ram_default]
+Compiling architecture rtl of entity xil_defaultlib.arbitered_ram [arbitered_ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.d_ff [\d_ff(n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.comp_two [\comp_two(n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.alu [alu_default]
+Compiling architecture rtl of entity xil_defaultlib.output_control [output_control_default]
+Compiling architecture rtl of entity xil_defaultlib.comp_two [\comp_two(n=6)\]
+Compiling architecture rtl of entity xil_defaultlib.alu_top [alu_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_fsm [alu_fsm_default]
+Compiling architecture rtl of entity xil_defaultlib.sseg_arbiter [\sseg_arbiter(n=5)\]
+Compiling architecture arch of entity xil_defaultlib.sseg_controller [\sseg_controller(sim_only='1')\]
+Compiling architecture rtl of entity xil_defaultlib.alu_fsm_top [alu_fsm_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_fsm_top_test
+Built simulation snapshot alu_fsm_top_test_behav

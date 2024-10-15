@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../clase_4.srcs/sources_1/new/sum_completo_bit.vhd" \
+"../../../../clase_4.srcs/sim_1/new/sum_completo_bit_test.vhd" \
+
+# Do not sort compile order
+nosort

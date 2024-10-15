@@ -1,0 +1,4 @@
+Running: xsim.dir/sum_completo_bit_test_behav/xsimk -simmode gui -wdb sum_completo_bit_test_behav.wdb -simrunnum 0 -socket 55605
+Design successfully loaded
+Design Loading Memory Usage: 19892 KB (Peak: 20436 KB)
+Design Loading CPU Usage: 70 ms

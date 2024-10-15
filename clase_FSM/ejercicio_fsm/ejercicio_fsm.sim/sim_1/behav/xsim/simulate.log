@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Simulación terminó OK
+Time: 120 ns  Iteration: 0  Process: /deteccion_secuencia_test/stim_proc  File: /home/lorenzo/Desktop/Labo_3/codigo/clase_FSM/ejercicio_fsm/ejercicio_fsm.srcs/sim_1/new/deteccion_secuencia_test.vhd
+$finish called at time : 120 ns : File "/home/lorenzo/Desktop/Labo_3/codigo/clase_FSM/ejercicio_fsm/ejercicio_fsm.srcs/sim_1/new/deteccion_secuencia_test.vhd" Line 114

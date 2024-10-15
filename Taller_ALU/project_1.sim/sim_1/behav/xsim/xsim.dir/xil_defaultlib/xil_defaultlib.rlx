@@ -1,0 +1,17 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sim_1/new/alu_test.vhd,1724366861,vhdl,,,,alu_test,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sim_1/new/conversor_test.vhd,1724349405,vhdl,,,,conversor_test,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sim_1/new/igualdad_test.vhd,1724182789,vhdl,,,,igualdad_test,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sim_1/new/multiplicacion_test.vhd,1724185627,vhdl,,,,multiplicacion_test,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sim_1/new/sumador_test.vhd,1724258064,vhdl,,,,sumador_test,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/imports/clase_4.srcs/sim_1/new/sum_completo_bit_test.vhd,1723579998,vhdl,,,,sum_completo_bit_test,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/imports/clase_4.srcs/sources_1/new/multiplicador_sin_signo.vhd,1724185742,vhdl,/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/alu_4bits.vhd,,,multiplicador_sin_signo,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/C2_to_SignMag.vhd,1724281555,vhdl,/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/alu_4bits.vhd,,,c2_to_signmag,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/MyS_2_C2.vhd,1724349340,vhdl,/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/alu_4bits.vhd,,,mys_2_c2,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/alu_4bits.vhd,1724357594,vhdl,/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sim_1/new/alu_test.vhd,,,alu_4bits,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/calculadora_elemental.vhd,1724367276,vhdl,/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/alu_4bits.vhd,,,calculadora_elemental,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/gen_add_w_carry.vhd,1724183237,vhdl,/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/alu_4bits.vhd,,,gen_add_w_carry,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/igualdad_4bits.vhd,1724182907,vhdl,/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sources_1/new/alu_4bits.vhd,,,igualdad_4bits,,,,,,,,

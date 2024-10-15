@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzo/Desktop/Labo_3/codigo/ALU-PROG-CTRL/ALU-PROG-CTRL.srcs/sources_1/imports/Downloads/rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rom'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzo/Desktop/Labo_3/codigo/ALU-PROG-CTRL/ALU-PROG-CTRL.srcs/sources_1/imports/Downloads/program_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'program_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzo/Desktop/Labo_3/codigo/ALU-PROG-CTRL/ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/alu_fsm_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu_fsm_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzo/Desktop/Labo_3/codigo/ALU-PROG-CTRL/ALU-PROG-CTRL.srcs/sim_1/imports/new/alu_fsm_top_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu_fsm_top_test'

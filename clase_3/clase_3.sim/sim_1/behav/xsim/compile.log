@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzo/Desktop/Labo_3/codigo/IB-ED-Lab3_Clase03/eq1bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'eq1bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzo/Desktop/Labo_3/codigo/IB-ED-Lab3_Clase03/eq2bit_composite.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'eq2bit_composite'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzo/Desktop/Labo_3/codigo/IB-ED-Lab3_Clase03/eq2bit_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'eq2bit_test'

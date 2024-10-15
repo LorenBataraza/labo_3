@@ -1,0 +1,13 @@
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+-- Date        : Tue Aug 20 15:16:19 2024
+-- Host        : Lolo running 64-bit Debian GNU/Linux 12 (bookworm)
+-- Command     : write_vhdl -mode funcsim -nolib -force -file
+--               /home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.sim/sim_1/synth/func/xsim/sum_completo_bit_test_func_synth.vhd
+-- Design      : sum_completo_bit_test
+-- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
+--               synthesized. This netlist cannot be used for SDF annotated simulation.
+-- Device      : xc7s50csga324-1
+-- --------------------------------------------------------------------------------

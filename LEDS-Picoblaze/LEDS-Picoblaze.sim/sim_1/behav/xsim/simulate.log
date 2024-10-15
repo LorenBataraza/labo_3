@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: sim ended
+Time: 450 ns  Iteration: 0  Process: /picoblaze_example_tb/main_sim_proc  File: /home/lorenzo/Desktop/Labo_3/codigo/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sim_1/imports/sim/picoblaze_example_tb.vhd
+$finish called at time : 450 ns : File "/home/lorenzo/Desktop/Labo_3/codigo/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sim_1/imports/sim/picoblaze_example_tb.vhd" Line 68

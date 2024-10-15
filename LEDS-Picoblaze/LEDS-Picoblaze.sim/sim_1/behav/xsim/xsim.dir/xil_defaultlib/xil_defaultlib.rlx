@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/lorenzo/Desktop/Labo_3/codigo/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sim_1/imports/sim/picoblaze_example_tb.vhd,1728414797,vhdl,,,,picoblaze_example_tb,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/psm/test.vhd,1728414428,vhdl,/home/lorenzo/Desktop/Labo_3/codigo/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/picoblaze_example_top.vhd,,,jtag_loader_pkg;test,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/kcpsm6.vhd,1691674763,vhdl,/home/lorenzo/Desktop/Labo_3/codigo/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/picoblaze_example_top.vhd,,,kcpsm6,,,,,,,,
+/home/lorenzo/Desktop/Labo_3/codigo/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sources_1/imports/src/picoblaze_example_top.vhd,1696888452,vhdl,/home/lorenzo/Desktop/Labo_3/codigo/LEDS-Picoblaze/LEDS-Picoblaze.srcs/sim_1/imports/sim/picoblaze_example_tb.vhd,,,picoblaze_example_top,,,,,,,,

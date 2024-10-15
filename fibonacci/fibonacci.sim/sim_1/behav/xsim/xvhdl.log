@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzo/Desktop/Labo_3/codigo/fibonacci/fibonacci.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'datapath'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzo/Desktop/Labo_3/codigo/fibonacci/fibonacci.srcs/sim_1/new/fibonacci_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fibonacci_test'

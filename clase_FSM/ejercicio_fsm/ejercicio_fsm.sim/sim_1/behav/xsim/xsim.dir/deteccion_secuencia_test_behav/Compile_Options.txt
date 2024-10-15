@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "deteccion_secuencia_test_behav" "xil_defaultlib.deteccion_secuencia_test" -log "elaborate.log" 

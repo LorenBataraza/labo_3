@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Stopped at time : 6 ns : File "/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sim_1/new/alu_test.vhd" Line 93
+Failure: Simulación terminó OK
+Time: 8 ns  Iteration: 0  Process: /alu_test/stim_proc  File: /home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sim_1/new/alu_test.vhd
+$finish called at time : 8 ns : File "/home/lorenzo/Desktop/Labo_3/codigo/Taller_ALU/project_1.srcs/sim_1/new/alu_test.vhd" Line 106

@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../IB-ED-Lab3_Clase03/eq1bit.vhd" \
+"../../../../../IB-ED-Lab3_Clase03/eq2bit_composite.vhd" \
+"../../../../../IB-ED-Lab3_Clase03/eq2bit_test.vhd" \
+
+# Do not sort compile order
+nosort

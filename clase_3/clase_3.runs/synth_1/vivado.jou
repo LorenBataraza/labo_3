@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Aug 15 20:45:37 2024
+# Process ID: 15740
+# Current directory: /home/lorenzo/Desktop/Labo_3/codigo/clase_3/clase_3.runs/synth_1
+# Command line: vivado -log eq2bit_composite.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source eq2bit_composite.tcl
+# Log file: /home/lorenzo/Desktop/Labo_3/codigo/clase_3/clase_3.runs/synth_1/eq2bit_composite.vds
+# Journal file: /home/lorenzo/Desktop/Labo_3/codigo/clase_3/clase_3.runs/synth_1/vivado.jou
+# Running On        :Lolo
+# Platform          :Debian
+# Operating System  :Debian GNU/Linux 12 (bookworm)
+# Processor Detail  :AMD Ryzen 5 5500U with Radeon Graphics
+# CPU Frequency     :3318.874 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :6065 MB
+# Swap memory       :1024 MB
+# Total Virtual     :7089 MB
+# Available Virtual :1438 MB
+#-----------------------------------------------------------
+source eq2bit_composite.tcl -notrace

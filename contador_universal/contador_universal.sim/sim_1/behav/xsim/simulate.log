@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Simulación terminó OK
+Time: 300 ns  Iteration: 0  Process: /universal_bin_counter_test/stim_proc  File: /home/lorenzo/Desktop/Labo_3/codigo/contador_universal/contador_universal.srcs/sim_1/new/universal_bin_counter_test.vhd
+$finish called at time : 300 ns : File "/home/lorenzo/Desktop/Labo_3/codigo/contador_universal/contador_universal.srcs/sim_1/new/universal_bin_counter_test.vhd" Line 116

@@ -1,0 +1,26 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/alu_golden/alu_pkg.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/alu_golden/alu.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/ram/sdp_ram_pkg.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/new/d_ff.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/alu_golden/comp_two.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/alu_golden/output_control.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/alu_golden/alu_top.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/new/alu_fsm.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/utils/level_synchronizer.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/utils/debouncer.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/utils/reset_synchronizer.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/utils/input_conditioning.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/Downloads/rom_pkg.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/Downloads/rom.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/Downloads/program_control.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/ram/sdp_ram.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/ram/arbitered_ram.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/sseg/sseg_arbiter.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/sseg/sseg_controller.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sources_1/imports/sources_1/imports/rtl/alu_fsm_top.vhd" \
+"../../../../ALU-PROG-CTRL.srcs/sim_1/imports/new/alu_fsm_top_test.vhd" \
+
+# Do not sort compile order
+nosort
