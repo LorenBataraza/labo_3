@@ -1,0 +1,2 @@
+../Core/Src/interrupts.c:5:6:TIM5_IRQHandler	2
+../Core/Src/interrupts.c:22:6:DMA2_Stream2_IRQHandler	1

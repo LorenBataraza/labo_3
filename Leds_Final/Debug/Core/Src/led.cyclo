@@ -1,0 +1,3 @@
+../Core/Src/led.c:14:7:mapf	1
+../Core/Src/led.c:19:7:bound	1
+../Core/Src/led.c:24:6:LED_fillBuffer	4

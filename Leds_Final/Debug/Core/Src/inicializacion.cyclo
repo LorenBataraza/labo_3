@@ -1,0 +1,6 @@
+../Drivers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	2
+../Core/Src/inicializacion.c:14:6:initGPIO	1
+../Core/Src/inicializacion.c:62:6:initDMA	1
+../Core/Src/inicializacion.c:88:6:initClock	6
+../Core/Src/inicializacion.c:141:6:initTimers	1
+../Core/Src/inicializacion.c:202:6:init	1

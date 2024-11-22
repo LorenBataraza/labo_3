@@ -1,0 +1,6 @@
+../Drivers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	16	static,ignoring_inline_asm
+../Core/Src/inicializacion.c:14:6:initGPIO	4	static
+../Core/Src/inicializacion.c:62:6:initDMA	8	static
+../Core/Src/inicializacion.c:88:6:initClock	8	static
+../Core/Src/inicializacion.c:141:6:initTimers	8	static
+../Core/Src/inicializacion.c:202:6:init	8	static

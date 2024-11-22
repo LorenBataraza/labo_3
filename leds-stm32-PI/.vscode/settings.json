@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "gamma.h": "c",
+        "systick.h": "c",
+        "led.h": "c",
+        "math.h": "c",
+        "led_programs.h": "c",
+        "image1.h": "c",
+        "stm32f446xx.h": "c",
+        "stdint.h": "c",
+        "colors.h": "c",
+        "image2.h": "c",
+        "cstdint": "c",
+        "random": "c",
+        "limits": "c",
+        "algorithm": "c",
+        "text.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c"
+    }
+}
