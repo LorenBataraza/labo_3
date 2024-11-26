@@ -23,12 +23,15 @@
 /* USER CODE BEGIN Includes */
 #include "main.h"
 #include <stdint.h>
+#include <string.h>
 
 #include "stm32f446xx.h"
 #include "systick.h"
 #include "led.h"
 #include "led_programs.h"
 #include "inicializacion.h"
+// #include "video.h"
+#include "video_gojo.h"
 
 // Agrego fotos estáticas
 #include "image2.h"
@@ -76,7 +79,7 @@ volatile uint8_t busyFlag; // Se limpia con el DMA2_Stream2_IRQHandler
 uint8_t *nextBuffer;
 
 uint32_t current_buffer, start_time;
-programs_t programa_actual=img2;
+programs_t programa_actual=video_1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -147,8 +150,9 @@ int main(void)
               // LED_rectangle(frame, red , 20, 40, 20, 40 );
               LED_fillBuffer(frame, nextBuffer);
       		break;
-      	case img1:
-      		LED_fillBuffer(frame_img2, nextBuffer);
+
+        case img1:
+      		LED_fillBuffer(frame_inicial, nextBuffer);
       		break;
       	case img2:
       		LED_fillBuffer(frame_img1, nextBuffer);
@@ -190,6 +194,12 @@ int main(void)
               LED_FallingSand(frame);
               LED_fillBuffer(frame, nextBuffer);
           break;
+
+          case video_1:
+        	  LED_VideoByFrameChanges(frame, &video);
+        	  LED_fillBuffer(frame, nextBuffer);
+        	  break;
+
       }
 
       while(HAL_GetTick() - start_time < 30); // Capea f=1/30ms=33,33Hz
@@ -374,7 +384,7 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
-	if(GPIO_Pin= BOTON_Pin){
+	if(GPIO_Pin==BOTON_Pin){
 		programa_actual = (programa_actual +1)%total_programs;
 	}
 

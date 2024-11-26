@@ -4,6 +4,7 @@
 #include <string.h>
 #include "main.h"
 #include "led.h"
+#include "led_programs.h"
 
 void LED_waveEffect(RGB_t *frame) {
     static float time;
@@ -60,6 +61,17 @@ void LED_plasmaEffect(RGB_t *frame) {
             PIXEL(frame, x, y).B = b;
         }
     }
+}
+
+void LED_Image(RGB_t *frame, RGB_t *image_to_copy){
+    for (uint8_t row = 0; row <= WIDTH; row++) {
+        for (uint8_t col = 0; col <= HEIGHT; col++) {
+            // Calculamos la posición en el frame
+            uint32_t index = row * WIDTH + col;
+            // Establecemos el color en el frame
+            frame[index] = image_to_copy[index];
+        };
+    };
 }
 
 void LED_rectangle(RGB_t *frame, RGB_t color, uint8_t min_row, uint8_t max_row, uint8_t min_col, uint8_t max_col){
@@ -321,4 +333,32 @@ for (int row = HEIGHT - 2; row >= 0; row--) {  // Recorrer de abajo hacia arriba
         }
     }
     free(frame_auxiliar);
+}
+
+
+void LED_Video(uint8_t *nextBuffer, RGB_t** video, uint32_t cantidad_frames){
+    static uint32_t current_frame =0;
+    LED_fillBuffer(video[current_frame], nextBuffer);
+    current_frame = (current_frame+1)%cantidad_frames;
+}
+
+// Aplico un cambio
+void LED_ApplyChanges(RGB_t *frame, frame_diff_t *frame_diference){
+    // Recorro todos los cambios
+    for (size_t i = 0; i < frame_diference->cantidad_de_cambios; i++){
+        uint16_t indice_actual = frame_diference->array_cambios_pixeles[i].index;
+        frame[indice_actual]=  frame_diference->array_cambios_pixeles[i].nuevo_valor;
+    }
+    
+}
+
+void LED_VideoByFrameChanges(RGB_t *frame, const video_by_changes_t* video){
+    static uint32_t current_frame =0;
+    if(current_frame==0){
+        LED_Image(frame, video->frame_inicial);
+    }else{
+    	LED_ApplyChanges(frame, &video->array_diferencias_frames[current_frame-1]);
+    }
+    current_frame = (current_frame+1)%video->cantidad_de_frames;
+    HAL_Delay(video->duracion_ms/video->cantidad_de_frames);
 }

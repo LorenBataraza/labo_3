@@ -31,8 +31,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h \
  ../Core/Inc/systick.h ../Core/Inc/led.h ../Core/Inc/led_programs.h \
- ../Core/Inc/inicializacion.h ../Core/Inc/image2.h ../Core/Inc/main.h \
- ../Core/Inc/image1.h ../Core/Inc/colors.h ../Core/Inc/text.h
+ ../Core/Inc/inicializacion.h ../Core/Inc/video_gojo.h ../Core/Inc/main.h \
+ ../Core/Inc/image2.h ../Core/Inc/image1.h ../Core/Inc/colors.h \
+ ../Core/Inc/text.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -69,8 +70,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/led.h:
 ../Core/Inc/led_programs.h:
 ../Core/Inc/inicializacion.h:
-../Core/Inc/image2.h:
+../Core/Inc/video_gojo.h:
 ../Core/Inc/main.h:
+../Core/Inc/image2.h:
 ../Core/Inc/image1.h:
 ../Core/Inc/colors.h:
 ../Core/Inc/text.h:
